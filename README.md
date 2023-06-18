@@ -94,6 +94,7 @@ We sort all cells by value, it takes O(klog⁡k)O(k\log k)O(klogk) to sort an ar
 The iteration over sorted cells has O(m⋅n)O(m \cdot n)O(m⋅n) steps, each step consists of checking at most four neighbor cells, thus it takes O(m⋅n)O(m \cdot n)O(m⋅n) time.
 For initialization of dp and the calculation of answer we iterate over all the cells of the dp array, which also takes O(m⋅n)O(m \cdot n)O(m⋅n) time.
 To sum up, the overall time complexity is O(m⋅n⋅log⁡(m⋅n))O(m\cdot n \cdot\log(m\cdot n))O(m⋅n⋅log(m⋅n)).
-## Space complexity: O(m⋅n)O(m\cdot n)O(m⋅n)
+## Space complexity: 
+O(m⋅n)O(m\cdot n)O(m⋅n)
 
 We used two arrays, cellList and dp, they both contain O(m⋅n)O(m \cdot n)O(m⋅n) elements.
