@@ -3,7 +3,7 @@
 ## Problem
 You are given an `m` x `n` integer matrix `grid`, where you can move from a cell to any adjacent cell in all four directions. The task is to find the number of strictly increasing paths in the grid, considering that you can start from any cell and end at any cell. Since the answer may be very large, it should be returned modulo 10^9 + 7.
 
-A strictly increasing path is a path in which the value of each cell visited is strictly greater than the value of the previous cell in the path. Two paths are considered different if they do not have exactly the same sequence of visited cells.
+A strictly increasing path is a path in which the value of each cell visited is strictly greater than the value of the previous cell in the path. Two paths are considered different if they do not have the same sequence of visited cells.
 
 ## Solution
 The solution uses dynamic programming to solve the problem efficiently. Here's a step-by-step explanation of the solution:
@@ -11,8 +11,8 @@ The solution uses dynamic programming to solve the problem efficiently. Here's a
 1. Initialize the necessary variables:
 
 - `directions` array: It defines the four possible directions to move - right, left, down, and up.
-- `m` and `n`: They represent the number of rows and columns in the grid, respectively.
-- `mod`: It is the modulo value used to keep the answer within bounds.
+- `m` and `n` represent the number of rows and columns in the grid, respectively.
+- `mod` is the modulo value used to keep the answer within bounds.
 
 2. Initialize the `dp` array:
 
